@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.CatalogoAdminFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/product_txt"
+        android:textAlignment="center"
+        android:background="@drawable/edit_txt_round_white"
+        />
+
+    <ImageView
+        android:layout_marginTop="13sp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20sp"
+        android:id="@+id/productos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="18dp"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/catalogo_first_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_txt"
+                android:layout_marginStart="10sp"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/catalogo_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shopping_cart" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/product_txt"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_modify_btn"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginStart="30dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/product_txt"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_delete_btn"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

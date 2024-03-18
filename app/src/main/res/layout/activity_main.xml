@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:background="@color/bg_component">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store_name"
+        android:textSize="54sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="200sp"
+        android:layout_height="270sp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store_desc"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpBtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@color/important_component"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logInBtn"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/important_component"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+</layout>
