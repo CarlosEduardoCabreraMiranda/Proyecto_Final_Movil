@@ -33,6 +33,25 @@
             
          - Página de administrador.
              -Sub página de administrador principal.
-             -Sub página de administrador productos.
-             
-5. **Seguiremos actualizando este proyecto según se siga actualizando el mismo. Mantente alerta y no te pierdas las actualizaciones de este 😎**
+   
+             -Sub página o fragmento para administrar productos.
+                 -Llena de un recyclerView que a su vez, gracias a un viewHolder y a las librerias de Retrofit y GSON 2.9.0 se traen datos desde una lista de datos reducidos tipo producto (id, nombre) 
+                 exportada desde el controlador springboot.
+
+             -Sub página o fragmento para registrar productos (En progreso).
+   
+             -Sub página o fragmento para administrar usuarios.
+                 -Llena de un recyclerView que a su vez, gracias a un viewHolder y a las librerias de Retrofit y GSON 2.9.0 se traen datos desde una lista de datos reducidos tipo 
+                  usuarios(id,nombre,usuario,password) exportada desde 
+                   el controlador springboot (En progreso).
+
+             -Sub página o fragmento para registrar productos (En progreso).
+
+             -Sub página o fragmento para administrar ventas.
+                 -Llena de un recyclerView que a su vez, gracias a un viewHolder y a las librerias de Retrofit y GSON 2.9.0 se traen datos desde una lista de datos reducidos tipo 
+                  usuarios(id,nombre,usuario,password) exportada desde 
+                   el controlador springboot (En progreso).
+
+             -Sub página o fragmento para registrar ventas (En progreso).
+   
+6. **Seguiremos actualizando este proyecto según se siga actualizando el mismo. Mantente alerta y no te pierdas las actualizaciones de este 😎. Marca del 25/03/2024**
