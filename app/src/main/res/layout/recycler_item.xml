@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/producto_mainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Admin.CatalogoAdminFragment"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/producto_firstCd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            android:layout_marginBottom="25dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/first_producto_firstLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/recycler_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recycler_txt"
+                    android:layout_marginStart="10sp"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/catalogo_first_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shopping_cart" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/first_producto_secondLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/modifyBtn"
+                        app:cardCornerRadius="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/modify_txt"
+                        android:textSize="15sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_modify_btn"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/deleteBtn"
+                        android:layout_marginStart="30dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/delete_txt"
+                        android:textSize="15sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_delete_btn"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

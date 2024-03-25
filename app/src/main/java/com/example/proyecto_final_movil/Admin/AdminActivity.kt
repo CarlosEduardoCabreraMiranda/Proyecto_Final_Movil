@@ -38,9 +38,10 @@ class AdminActivity : AppCompatActivity() {
 
     private fun signOut(){
         FirebaseAuth.getInstance().signOut()
+
+
         val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
-        finish()
 
     }
 

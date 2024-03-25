@@ -1,4 +1,4 @@
-package com.example.proyecto_final_movil.registration
+package com.example.proyecto_final_movil.Validations
 
 
 import androidx.appcompat.app.AppCompatActivity
@@ -127,6 +127,7 @@ class LoginActivity : AppCompatActivity() {
         if (currentUser != null){
             val intentS = Intent(this, AdminActivity::class.java)
             startActivity(intentS)
+            finish()
         }
 
     }

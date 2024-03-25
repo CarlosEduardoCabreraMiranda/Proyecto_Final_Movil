@@ -24,7 +24,8 @@ import com.example.proyecto_final_movil.databinding.FragmentAdminMainBinding
 class AdminMainFragment : Fragment(){
     //intento de binding
     private lateinit var binding: FragmentAdminMainBinding
-    private val fragmentB = CatalogoAdminFragment();
+    private val fragmentB = CatalogoAdminFragment()
+    private val fradmentD = UsuariosAdminFragment()
 
     // TODO: Rename and change types of parameters
     //private var param1: String? = null
@@ -51,17 +52,22 @@ class AdminMainFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val catalogoCd = binding.catalogoCard
+        val usuariosCd = binding.clientesCard
+
+        val fragmentContainerId = R.id.fragment_container
 
         // Agrega el listener a la card
         catalogoCd.setOnClickListener {
-
             //Tomamos como referencia el contenedor a inyectar el fragmento
-            val fragmentContainerId = R.id.fragment_container
-
-
             Utils.replaceFragment(fragmentContainerId,fragmentB,parentFragmentManager)
         }
+
+        usuariosCd.setOnClickListener{
+            Utils.replaceFragment(fragmentContainerId,fradmentD,parentFragmentManager)
+        }
+
     }
 
 

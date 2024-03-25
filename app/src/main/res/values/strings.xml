@@ -13,6 +13,11 @@
     tu mejor opción.</string>
 
 
+    <!--Comunes-->
+    <string name="modify_txt">Modificar</string>
+    <string name="delete_txt">Eliminar</string>
+    <string name="recycler_txt">Recycler TXT</string>
+
     <!-- login text -->
     <string name="sign_up">Registrarme</string>
     <string name="log_in">Iniciar Sesión</string>
@@ -22,6 +27,17 @@
 
     <!-- Products strings -->
     <string name="product_txt">Catalogo</string>
+    <string name="srch_products">Buscar Productos</string>
+    <string name="default_results">0 resultados</string>
+    <string name="add_productTxt">Agregar Producto</string>
+    <string name="product_codeTxt">Código</string>
+    <string name="product_nameTxt">Nombre</string>
+    <string name="product_brandTxt">Marca</string>
+    <string name="product_imageTxt">Imagen</string>
+    <string name="propudct_priceTxt">Precio</string>
+    <string name="product_features">Características</string>
+    <string name="product_reference_codeTxt">Referencia</string>
+    <string name="product_warrantTxt">Garantía</string>
 
     <!-- Clients strings-->
     <string name="client_txt">Clientes</string>
